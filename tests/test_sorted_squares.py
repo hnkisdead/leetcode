@@ -10,7 +10,7 @@ import pytest
         [[], []],
     ],
 )
-def test_find_max_consecutive_ones(given, expected):
+def test_sorted_squares(given, expected):
     solution = Solution()
 
     actual = solution.sortedSquares(given)

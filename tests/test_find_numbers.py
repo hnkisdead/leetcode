@@ -11,7 +11,7 @@ import pytest
         [[100000], 1],
     ],
 )
-def test_find_max_consecutive_ones(given, expected):
+def test_find_numbers(given, expected):
     solution = Solution()
 
     actual = solution.findNumbers(given)
