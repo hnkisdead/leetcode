@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         if not nums:
