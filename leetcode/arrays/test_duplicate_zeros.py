@@ -1,9 +1,9 @@
-from leetcode.arrays.duplicate_zeros import Solution
+from .duplicate_zeros import Solution
 import pytest
 
 
 @pytest.mark.parametrize(
-    "given,expected",
+    "input_,expected",
     [
         [[1, 0, 2, 3, 0, 4, 5, 0], [1, 0, 0, 2, 3, 0, 0, 4]],
         [[1, 1, 2, 3, 1, 4, 5, 0], [1, 1, 2, 3, 1, 4, 5, 0]],
@@ -11,9 +11,9 @@ import pytest
         [[], []],
     ],
 )
-def test_duplicate_zeros(given, expected):
+def test_duplicate_zeros(input_, expected):
     solution = Solution()
 
-    solution.duplicateZeros(given)
+    solution.duplicateZeros(input_)
 
-    assert given == expected
+    assert input_ == expected

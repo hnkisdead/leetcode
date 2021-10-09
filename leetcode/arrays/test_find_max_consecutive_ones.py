@@ -1,18 +1,18 @@
-from leetcode.arrays.find_max_consecutive_ones import Solution
+from .find_max_consecutive_ones import Solution
 import pytest
 
 
 @pytest.mark.parametrize(
-    "given,expected",
+    "input_,expected",
     [
         [[1, 1, 0, 1, 1, 1], 3],
         [[1, 0, 1, 1, 0, 1], 2],
         [[], 0],
     ],
 )
-def test_find_max_consecutive_ones(given, expected):
+def test_find_max_consecutive_ones(input_, expected):
     solution = Solution()
 
-    actual = solution.findMaxConsecutiveOnes(given)
+    actual = solution.findMaxConsecutiveOnes(input_)
 
     assert actual == expected
